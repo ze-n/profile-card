@@ -30,6 +30,7 @@ main{
 
 section{
     overflow:hidden;
+    height: 100vh;
     min-height: 600px;
     width:100vw;
     position: relative;
@@ -38,6 +39,7 @@ section{
         justify-content: center;
         align-items: center;
         min-height:600px;
+        height:100%;
         padding: 1rem;
     }
 

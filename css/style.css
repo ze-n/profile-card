@@ -46,24 +46,28 @@ section .container {
       -ms-flex-align: center;
           align-items: center;
   min-height: 600px;
-  height: 100%;
+  height: 100vh;
   padding: 1rem;
+}
+
+.top-circle, .bottom-circle {
+  width: 100%;
 }
 
 .top-circle {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transform: translate(-35%, -60%);
-          transform: translate(-35%, -60%);
+  -webkit-transform: translate(-45%, -65%);
+          transform: translate(-45%, -65%);
 }
 
 .bottom-circle {
   position: absolute;
   bottom: 0;
   right: 0;
-  -webkit-transform: translate(30%, 70%);
-          transform: translate(30%, 70%);
+  -webkit-transform: translate(35%, 75%);
+          transform: translate(35%, 75%);
 }
 
 .card {
@@ -163,6 +167,34 @@ section .container {
 }
 
 .main-footer a {
-  margin-left: .5rem;
+  margin: 0rem .5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .top-circle {
+    -webkit-transform: translate(-40%, -60%);
+            transform: translate(-40%, -60%);
+  }
+  .bottom-circle {
+    -webkit-transform: translate(50%, 60%);
+            transform: translate(50%, 60%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .top-circle {
+    -webkit-transform: translate(-50%, -30%);
+            transform: translate(-50%, -30%);
+  }
+  .bottom-circle {
+    -webkit-transform: translate(50%, 30%);
+            transform: translate(50%, 30%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
